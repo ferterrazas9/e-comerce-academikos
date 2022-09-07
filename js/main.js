@@ -3,98 +3,98 @@ const productos = [
     {
         id: 1,
         nombre: 'Coche unisex',
-        imagen: '/img/producto1.jpg',
+        imagen: './img/producto1.jpg',
         precio: 300,
         unidades: 5
     },
     {
         id: 2,
         nombre: 'Coche p/niña',
-        imagen: '/img/producto2.jpg',
+        imagen: './img/producto2.jpg',
         precio: 380,
         unidades: 4
     },
     {
         id: 3,
         nombre: 'Juego de plato y vaso',
-        imagen: '/img/producto3.jpg',
+        imagen: './img/producto3.jpg',
         precio: 25,
         unidades: 7
     },
     {
         id: 4,
         nombre: 'Platos',
-        imagen: '/img/producto4.jpg',
+        imagen: './img/producto4.jpg',
         precio: 25,
         unidades: 5
     },
     {
         id: 5,
         nombre: 'Columpio',
-        imagen: '/img/producto5.jpg',
+        imagen: './img/producto5.jpg',
         precio: 50,
         unidades: 4
     },
     {
         id: 6,
         nombre: 'Sonajero',
-        imagen: '/img/producto6.jpg',
+        imagen: './img/producto6.jpg',
         precio: 25,
         unidades: 7
     },
     {
         id: 7,
         nombre: 'Rodadero_tapete',
-        imagen: '/img/producto7.jpg',
+        imagen: './img/producto7.jpg',
         precio: 80,
         unidades: 5
     },
     {
         id: 8,
         nombre: 'Pista de bloques',
-        imagen: '/img/producto8.jpg',
+        imagen: './img/producto8.jpg',
         precio: 250,
         unidades: 4
     },
     {
         id: 9,
         nombre: 'Vaso niña',
-        imagen: '/img/producto9.jpg',
+        imagen: './img/producto9.jpg',
         precio: 45,
         unidades: 7
     },
     {
         id: 10,
         nombre: 'Vaso niño',
-        imagen: '/img/producto10.jpg',
+        imagen: './img/producto10.jpg',
         precio: 45,
         unidades: 5
     },
     {
         id: 11,
         nombre: 'Tablero magnético',
-        imagen: '/img/producto11.jpg',
+        imagen: './img/producto11.jpg',
         precio: 205,
         unidades: 4
     },
     {
         id: 12,
         nombre: 'Juego álgebra',
-        imagen: '/img/producto12.jpg',
+        imagen: './img/producto12.jpg',
         precio: 85,
         unidades: 7
     },
     {
         id: 13,
         nombre: 'Muñeca Pia Tutti',
-        imagen: '/img/producto13.jpg',
+        imagen: './img/producto13.jpg',
         precio: 45,
         unidades: 4
     },
     {
         id: 14,
         nombre: 'Muñeco Batman',
-        imagen: '/img/producto14.jpg',
+        imagen: './img/producto14.jpg',
         precio: 45,
         unidades: 7
     }
@@ -103,35 +103,27 @@ const productos = [
 // Productos 
 const productosContenedor = document.querySelector('.products__container')
 
-/*function pintarProductos() {
+function pintarProductos() {
     let html = ''
     for (const { id, nombre, imagen, precio, unidades } of productos) {
         html += `
-      <div>
-      <article class="products__item">
-      <div class="products__price">$${precio}</div>
-  
-  
-        <img class="products__image" src="${imagen}" alt="${nombre}">
-  
-        <div class="products__data">
-          <div class="products__info">
-            <h2 class="products__title">${nombre}</h2>
-            <span class="products__stock">Cant: ${unidades}</span>
-          </div>
-  
-          <div class="products__button">
-            <button type="button" class="agregar button" data-id="${id}"><i class='bx bx-add-to-queue' ></i></button>
-          </div>
+        <div class="producto">
+            <img class="producto__imagen" src="${imagen}" alt="${nombre}">
+            <div class="producto__informacion">
+                <p class="producto__nombre">${nombre}</p>
+                <p class="producto__precio">${unidades}</p>
+                <p class="producto__precio">$${precio} USD</p>
+                <div class="products__button">
+                    <button type="button" class="button producto__precio agregar" data-id="${id}"><i class='bx bxs-add-to-queue'></i>Agregar</button>
+                </div>
+            </div>
         </div>
-      </article>
-    </div>
-      `
+    `
     }
     productosContenedor.innerHTML = html
 }
 
-pintarProductos()*/
+pintarProductos()
 
 // Carrito 
 let carrito = []
